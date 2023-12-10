@@ -1,6 +1,8 @@
 // Write your code here
 import './index.css'
 
+import {Link} from 'react-router-dom'
+
 import Loader from 'react-loader-spinner'
 
 import {Component} from 'react'
@@ -44,17 +46,19 @@ class Home extends Component {
         <div className="teams-card-container">
           {isLoading ? (
             <Loader
+              data-testid="loader"
               type="TailSpin"
               height={50}
               width={50}
               color="#5755a7"
               className="loaderStyle"
-              testid="loader"
             />
           ) : (
             teamCardList.map(each => (
               <li key={each.id} className="list-style">
-                <TeamCard teamCardList={each} />
+                <Link to={`/team-matches/${each.id}`}>
+                  <TeamCard teamCardList={each} />
+                </Link>
               </li>
             ))
           )}

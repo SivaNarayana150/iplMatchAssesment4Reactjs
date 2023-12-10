@@ -47,14 +47,15 @@ class TeamMatches extends Component {
   render() {
     const {teamBannerUrl, latestMatches, recentMatches, isLoading} = this.state
     return isLoading ? (
-      <Loader
-        type="TailSpin"
-        height={50}
-        width={50}
-        color="#5755a7"
-        className="loaderStyle"
-        testid="loader"
-      />
+      <div data-testid="loader">
+        <Loader
+          type="TailSpin"
+          height={50}
+          width={50}
+          color="#5755a7"
+          className="loaderStyle"
+        />
+      </div>
     ) : (
       <div className="team-matches-container">
         <img src={teamBannerUrl} alt="team banner" className="team-banner" />

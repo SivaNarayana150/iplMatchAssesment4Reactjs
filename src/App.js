@@ -11,7 +11,7 @@ import './App.css'
 const App = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/ipl/:id" component={TeamMatches} />
+    <Route exact path="/team-matches/:id" component={TeamMatches} />
     <Route component={NotFound} />
   </Switch>
 )
