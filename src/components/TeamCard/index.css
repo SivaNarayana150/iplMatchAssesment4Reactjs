@@ -1,0 +1,39 @@
+/* Write your CSS here */
+.team-card {
+  height: 30vh;
+  width: 43vw;
+  background-color: #ffffff33;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+  border-style: solid;
+  color: #ffffff33;
+  border-width: 2px;
+  border-radius: 4px;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .team-card {
+    height: 30vh;
+    width: 85vw;
+    background-color: #ffffff33;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+    border-style: solid;
+    color: #ffffff33;
+    border-width: 2px;
+    border-radius: 4px;
+    justify-content: center;
+  }
+}
+.image-logo {
+  height: 15vh;
+  margin-right: 2vh;
+}
+
+.team-name {
+  text-align: center;
+  font-size: large;
+  color: #ffffff;
+}

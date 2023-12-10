@@ -1,0 +1,50 @@
+/* Write your CSS here */
+.team-matches-container {
+  background-color: rgb(233, 83, 138);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+.team-banner {
+  width: 95vw;
+  height: 28vh;
+  margin-bottom: 5vh;
+}
+.Latest-matches-container {
+  background-color: #0f172a;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+.latest-match-col-1 {
+  display: flex;
+  flex-direction: column;
+
+  width: 32vw;
+}
+.competing-team {
+  font-size: medium;
+  color: #ffffff;
+  margin-bottom: 4px;
+  width: 30vw;
+}
+
+.competing-team-logo {
+  width: 24vw;
+  margin-right: 2vw;
+}
+.text-alighn {
+  text-align: right;
+}
+
+.recentMatchConatiner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
