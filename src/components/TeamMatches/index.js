@@ -54,6 +54,7 @@ class TeamMatches extends Component {
           width={50}
           color="#5755a7"
           className="loaderStyle"
+          data-testid="loader"
         />
       </div>
     ) : (
@@ -62,7 +63,7 @@ class TeamMatches extends Component {
 
         <div className="Latest-matches-container">
           <div className="latest-match-col-1">
-            <h1 className="competing-team">{latestMatches.competing_team}</h1>
+            <p className="competing-team">{latestMatches.competing_team}</p>
             <p className="competing-team">{latestMatches.date}</p>
             <p className="competing-team">{latestMatches.venue}</p>
             <p className="competing-team">{latestMatches.result}</p>
@@ -72,7 +73,7 @@ class TeamMatches extends Component {
             <img
               src={latestMatches.competing_team_logo}
               className="competing-team-logo"
-              alt="logo"
+              alt={`latest match ${latestMatches.competing_team}`}
             />
           </div>
 

@@ -45,14 +45,16 @@ class Home extends Component {
 
         <div className="teams-card-container">
           {isLoading ? (
-            <Loader
-              data-testid="loader"
-              type="TailSpin"
-              height={50}
-              width={50}
-              color="#5755a7"
-              className="loaderStyle"
-            />
+            <div data-testid="loader">
+              <Loader
+                type="TailSpin"
+                height={50}
+                width={50}
+                color="#5755a7"
+                className="loaderStyle"
+                data-testid="loader"
+              />
+            </div>
           ) : (
             teamCardList.map(each => (
               <li key={each.id} className="list-style">

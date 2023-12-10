@@ -13,8 +13,12 @@ const MatchCard = props => {
 
   return (
     <div className="match-card-container">
-      <img src={competingTeamLogo} className="logo-image" alt="logo" />
-      <h1 className="texting">{competingTeam}</h1>
+      <img
+        src={competingTeamLogo}
+        className="logo-image"
+        alt={`competing team ${competingTeam}`}
+      />
+      <p className="texting">{competingTeam}</p>
       <p className="texting">{result}</p>
 
       <p className={matchStatusStyle}>{matchStatus}</p>
